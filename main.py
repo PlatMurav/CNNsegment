@@ -6,9 +6,9 @@ model = Segmentator('images', 'instances.json')
 # we need to split our data we'll have test, train and validation sets
 model.split_data()
 
-train_tfrecord_file = 'tfrecords/train.tfrecord'
-val_tfrecord_file = 'tfrecords/val.tfrecord'
-test_tfrecord_file = 'tfrecords/test.tfrecord'
+train_tfrecord_file = 'train.tfrecord'
+val_tfrecord_file = 'val.tfrecord'
+test_tfrecord_file = 'test.tfrecord'
 
 # Write TfRecords
 model.create_tfrecords(train_tfrecord_file, "train")
